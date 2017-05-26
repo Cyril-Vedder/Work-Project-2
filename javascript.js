@@ -18,10 +18,10 @@ function playGame(numOfRounds) {
   }while(numOfRounds > 0);
 
   if(playerScore > computerScore) {
-    alert("You have " + playerScore + " points compared to the computer's " + computerScore + " points. So you win!");
+    alert("You have " + playerScore + " points compared to the computer's " + computerScore + " points. So you win! Skynet has been defeated.");
   }
   else {
-    alert("The computer has " + computerScore + " points compared to your " + playerScore + " points. So the computer wins!");
+    alert("The computer has " + computerScore + " points compared to your " + playerScore + " points. So the computer wins! Sucks to be you.");
   }
 
   clearScores();
@@ -49,7 +49,7 @@ function computerGuess() {
 }
 
 function compareGuesses(guess1, guess2) {
-  alert("You chose: " + guess1 + " and the computer chose: " + guess2 + "!");
+  alert("You chose " + guess1 + " and the computer chose " + guess2 + ".");
 
     if(guess1 === guess2) {
     alert("You and the computer guessed the same thing! Go again, no score added.");
